@@ -1,0 +1,84 @@
+.about-page {
+  padding: 20px;
+  position: relative;
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+.hero-image-container {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.texto-superpuesto {
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.valores-section {
+  padding: 50px 0;
+}
+
+.valor-card {
+  background-color: #f8f8f8;
+  padding: 30px;
+  border-radius: 15px;
+  height: 100%;
+  transition: all 0.3s ease;
+  margin: 15px;
+}
+
+.valor-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(189, 157, 157, 0.1);
+}
+
+.valor-card h4 {
+  color: #fc9ba9;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .hero-image-container {
+    height: 70vh; /* Reduce height on smaller screens */
+  }
+
+  .lead {
+    font-size: 1.8rem;
+  }
+
+  .parrafo-bienestar {
+    font-size: 1rem;
+  }
+
+  .valor-card {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .lead {
+    font-size: 1.6rem;
+  }
+
+  .parrafo-bienestar {
+    font-size: 0.9rem;
+  }
+
+  .valor-card {
+    padding: 20px;
+  }
+
+  .container > h2 {
+    font-size: 1.8rem;
+  }
+}
